@@ -1,9 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
-
 @app.route("/")
 def home():
-    return "Welcome to CI/CD Lab using Jenkins and Docker!"
+    return "Welcome to CI/CD Lab - Version 2 (Automated Deployment)!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
